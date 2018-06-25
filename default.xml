@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default remote="prakash56755" revision="default"/>
+
+  <!-- You can have as many remote repositories as you like -->
+  <remote name="mender" fetch="git://github.com/mendersoftware" />
+  <remote name="yocto" fetch="git://git.yoctoproject.org" />
+  <remote name="oe" fetch="git://git.openembedded.org" />
+  <remote name="imyller" fetch="git://github.com/imyller" />
+  <remote name="intel-iot-devkit" fetch="git://github.com/intel-iot-devkit" />
+  <remote name="prakash6755" fetch="git://github.com/prakash56755" />
+  <!-- List all the repositories you want to fetch -->
+  <!-- "name": git repository's name on hosting server
+       "remote": the remote host from above (if not the default)
+       "revision": commitish to checkout (if not the default)
+       "path": directory where git repository gets cloned/synced -->
+
+
+  <project name="poky" revision="refs/heads/rocko" remote="yocto" />
+  <project name="meta-openembedded" revision="refs/heads/rocko"  remote="oe" path="poky/meta-openembedded" />
+  <project name="meta-mender" revision="refs/heads/rocko"  remote="mender" path="poky/meta-mender" />
+  <project name="meta-nodejs" revision="refs/heads/master" remote="imyller" path="poky/meta-nodejs" />
+  <project name="meta-iot-cloud" revision="refs/heads/rocko" remote="intel-iot-devkit" path="poky/meta-iot-cloud" />
+  <project name="meta-himinds" revision="refs/heads/rocko" remote="prakash56755" path="poky/meta-himinds" />
+ 
+</manifest>
+
