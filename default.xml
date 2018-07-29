@@ -22,6 +22,7 @@
   <project name="meta-nodejs" revision="refs/heads/master" remote="imyller" path="poky/meta-nodejs" />
   <project name="meta-iot-cloud" revision="refs/heads/rocko" remote="intel-iot-devkit" path="poky/meta-iot-cloud" />
   <project name="meta-himinds" revision="refs/heads/rocko" remote="prakash56755" path="poky/meta-himinds" />
+  <project name="build-script" revision="refs/heads/master" remote="prakash56755" path="poky/" />
  
 </manifest>
 
