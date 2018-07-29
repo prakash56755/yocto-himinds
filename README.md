@@ -32,4 +32,24 @@ Then move to Poky directory,
 
 $ cd poky
 
+Run the script to setup the initial environment and build setup,
 
+$ ./env-setup.sh build-test
+
+Running the above command will start to build the BSP.
+
+Once the build is completed, you need to flash the image in SD.
+
+$ cd poky/build-test/tmp/deploy/images/raspberrypi3 
+
+$ sudo dd if=himinds-basic-image-raspberrypi3.sdimg of=/dev/sdb bs=1M && sudo sync
+
+Here sdb is the device node of connected SD in host PC.
+
+
+
+Note: if you face below error on initializing the repo,
+
+error.GitError: --force-sync not enabled; cannot overwrite a local work tree. If you're comfortable with the possibility of losing the work tree's git metadata, use `repo sync --force-sync poky/` to proceed.
+
+$ repo sync --force-sync
