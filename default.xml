@@ -9,6 +9,7 @@
   <remote name="imyller" fetch="git://github.com/imyller" />
   <remote name="intel-iot-devkit" fetch="git://github.com/intel-iot-devkit" />
   <remote name="prakash56755" fetch="git://github.com/prakash56755" />
+  <remote name="agherzan" fetch="git://github.com/agherzan" />
   <!-- List all the repositories you want to fetch -->
   <!-- "name": git repository's name on hosting server
        "remote": the remote host from above (if not the default)
@@ -23,6 +24,7 @@
   <project name="meta-iot-cloud" revision="refs/heads/rocko" remote="intel-iot-devkit" path="poky/meta-iot-cloud" />
   <project name="meta-himinds" revision="refs/heads/rocko" remote="prakash56755" path="poky/meta-himinds" />
   <project name="build-script" revision="refs/heads/master" remote="prakash56755" path="poky/" />
- 
+  <project name="meta-raspberrypi" revision="refs/heads/rocko" remote="agherzan" path="poky/meta-raspberrypi" /> 
+
 </manifest>
 
